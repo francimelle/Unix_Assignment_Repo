@@ -11,9 +11,9 @@ function guess {
    if [[ $rightnum -eq $number ]]; then
       echo "CONGRATULATIONS"
    elif [[ $number -gt $rightnum ]]; then
-      echo "$number is too high. Guess the number of files in the current directory"
+      echo "$number is too high"
    else
-      echo "$number is too low. Guess the number of files in the current directory"
+      echo "$number is too low"
    fi
 
  done
