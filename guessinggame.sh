@@ -8,15 +8,15 @@ function guess {
    echo "Insert the number"
    read number
 
-   if [[ $number =~ [0-9]+ ]]; then 
-   if [[ $rightnum -eq $number ]]; then  
-      echo "CONGRATULATIONS"
-   elif [[ $number -gt $rightnum ]]; then
-      echo "Try again, the $number is too high"
-   else
-      echo "Try again, the $number is too high"
-   fi
- fi
+  if [[ $number =~ [0-9]+ ]]; then 
+    if [[ $rightnum -eq $number ]]; then  
+       echo "CONGRATULATIONS"
+     elif [[ $number -gt $rightnum ]]; then
+       echo "Try again, the $number is too high"
+     else
+       echo "Try again, the $number is too high"
+    fi
+  fi
 
  done
 
