@@ -13,7 +13,7 @@ function guess {
    elif [[ $number -gt $rightnum ]]; then
       echo "Try again, the $number is too high"
    else
-      echo "Try again, the $number is too low"
+      echo "Try again, the $number is too high"
    fi
  fi
 
