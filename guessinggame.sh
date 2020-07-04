@@ -7,7 +7,8 @@ function guess {
    echo "Guess the number of files in the current directory"
    echo "Insert the number"
    read number
- if [[ $number =~ [0-9]+ ]]; then 
+
+   if [[ $number =~ [0-9]+ ]]; then 
    if [[ $rightnum -eq $number ]]; then  
       echo "CONGRATULATIONS"
    elif [[ $number -gt $rightnum ]]; then
